@@ -58,11 +58,6 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item sign-up" href="./signup.html"
-                      >Sign Up</a
-                    >
-                  </li>
-                  <li>
                     <a class="dropdown-item log-out" href="./login.html"
                       >Log Out</a
                     >
@@ -86,6 +81,35 @@
       </nav>
     </header>
 
+    <main>
+      <section class="register">
+        <aside class="top">
+          <h3>Sign Up</h3>
+        </aside>
+        <aside class="bottom">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastname" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+          <button type="submit" id="submitButton" class="btn btn-success">
+            Submit
+          </button>
+        </aside>
+      </section>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -96,8 +120,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
-    <script src="./firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./firebase.js"></script>
     <script src="./main.js"></script>
+    <script src="./signup.js"></script>
   </body>
 </html>
