@@ -29,7 +29,7 @@ header nav .collapse {
 }
 
 header nav .container-fluid {
-  background-color: red;
+  background-color: #ffffff;
 }
 
 .log-out {
@@ -44,8 +44,19 @@ main {
   row-gap: 20px;
   color: #ffffff;
 }
+main .card-body {
+  color: #136BAA;
+}
+main #image img {
+  width: 180px;
+  height: 200px;
+}
+main #card {
+  width: 500px;
+  height: 500px;
+}
 
-main .register {
+/* main .register {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
@@ -71,4 +82,4 @@ main .register .bottom {
   width: 600px;
   height: 300px;
   box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 15px;
-}
+} */
