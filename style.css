@@ -67,6 +67,10 @@ main .register .bottom {
   border: none;
 }
 
+.card-img-overlay {
+  color: #00008b;
+}
+
 .card-img {
   width: 600px;
   height: 300px;
