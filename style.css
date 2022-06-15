@@ -42,7 +42,7 @@ main {
   display: grid;
   place-items: center;
   row-gap: 20px;
-  color: #ffffff;
+  color: red ;
 }
 
 main .register {
