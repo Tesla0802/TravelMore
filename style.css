@@ -44,37 +44,22 @@ main {
   row-gap: 20px;
   color: #ffffff;
 }
-
-main .register {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 20px;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 15px;
+main .card-body {
+  color: #136BAA;
 }
-
-main .register .top h3 {
-  text-align: center;
-  font-weight: bold;
+main .card-body i {
+  color: hwb(204 8% 76%);
 }
-
-main .register .bottom {
-  display: grid;
-  grid-template-columns: 1fr;
+main .card-body #p {
+  color: #136BAA !important;
 }
-
-.card {
-  border: none;
+main #image img {
+  width: 180px;
+  height: 200px;
 }
-
-.card-img-overlay {
-  color: #00008b;
-}
-
-.card-img {
-  width: 600px;
-  height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 15px;
+main #card {
+  width: 500px;
+  height: 500px;
 }
 
 .profile-pic {
