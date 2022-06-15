@@ -21,7 +21,7 @@ header {
 
 .dropdown-menu {
   width: 100%;
-  height: 5rem;
+  height: 9rem;
 }
 
 header nav .collapse {
@@ -60,4 +60,27 @@ main #image img {
 main #card {
   width: 500px;
   height: 500px;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 80px;
+}
+
+#file {
+  display: none;
+}
+
+#uploadBtn {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+#photo {
+  border-radius: 50%;
 }

@@ -1,3 +1,8 @@
+const pic = document.querySelector("profile-pic");
+const img = document.querySelector("#photo");
+const file = document.querySelector("#file");
+const uploadBtn = document.querySelector("#uploadBtn");
+
 function displayAlert(title, text, icon) {
   Swal.fire({
     icon: icon,
@@ -25,3 +30,22 @@ if (localStorage.getItem("userid")) {
     location.reload();
   });
 }
+
+file.addEventListener("change", function () {
+  const chooseFile = this.files[0];
+  if (chooseFile) {
+    const reader = new FileReader();
+
+    reader.addEventListener("load", function () {
+      img.setAttribute("src", reader.result);
+    });
+    reader.readAsDataURL(chooseFile);
+  }
+});
+
+addElementInFirebase("profilePic/", {
+  picture: pic,
+  image: img,
+  files: file,
+  uplButton: uploadBtn,
+});
