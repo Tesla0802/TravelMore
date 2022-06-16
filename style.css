@@ -95,6 +95,7 @@ main .card .image img {
 	background-color: #F5F5F5;
 }
 
+ HEAD
 ::-webkit-scrollbar
 {
 	width: 10px;
@@ -114,25 +115,44 @@ main .left .cardright {
   display: flex;
   justify-content: center;
 }
+.inputbox {
+  gap: 5px;
+}
+.btn {
+  border: none;
 
-.profile-pic img {
+}
+
+.user-img {
   width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#photo {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 #file {
   display: none;
 }
 
-#uploadBtn {
-  width: 100%;
-  height: 40px;
-  cursor: pointer;
-}
-
-#photo {
+#uploadebtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 6px 6px;
   border-radius: 50%;
-}
-
-.btn {
-  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  transform: translateX(100%);
+  margin-top: 60px;
+  background-color: #adacaccc;
+  box-shadow: 2px 4px 4px #000000a4;
 }

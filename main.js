@@ -1,7 +1,7 @@
-const pic = document.querySelector("profile-pic");
+const imgDiv = document.querySelector(".user-img");
 const img = document.querySelector("#photo");
 const file = document.querySelector("#file");
-const uploadBtn = document.querySelector("#uploadBtn");
+const uploadebtn = document.querySelector(".uploadebtn");
 
 function displayAlert(title, text, icon) {
   Swal.fire({
@@ -47,5 +47,5 @@ addElementInFirebase("profilePic/", {
   picture: pic,
   image: img,
   files: file,
-  uplButton: uploadBtn,
+  uplButton: uploadebtn,
 });
