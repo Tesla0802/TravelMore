@@ -85,6 +85,9 @@ main #card {
   border-radius: 50%;
 }
 
+.inputbox {
+  gap: 5px;
+}
 .btn {
   border: none;
 }
