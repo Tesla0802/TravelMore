@@ -6,5 +6,5 @@ const InputFive = document.querySelector(".inputfive")
 const BTN = document.querySelector(".Btn")
 
 BTN.addEventListener("click", () => {
-    
+    InputOne.value
 } )

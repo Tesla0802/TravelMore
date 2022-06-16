@@ -14,20 +14,19 @@ main .inputbox {
     padding: 62px 10px 0px 14px;
 }
 main .inputbox .inputone {
-   box-shadow:  3px 1px 20px 10px rgb(255 99 71 / 50%);
+   box-shadow:  3px 1px 20px 10px rgba(31, 22, 20, 08);
 }
 main .inputbox .inputtwo{
-    box-shadow:  3px 1px 20px 10px rgb(255 99 71 / 50%);
+    box-shadow:  3px 1px 20px 10px rgba(31, 22, 20, 0.8);
 }
 main .inputbox .inputthree{
-    box-shadow:  3px 1px 20px 10px rgb(255 99 71 / 50%);
+    box-shadow:  3px 1px 20px 10px rgba(31, 22, 20, 0.8);
 }
 main .inputbox .inputfour {
-    box-shadow:  3px 1px 20px 10px rgb(255 99 71 / 50%);
+    box-shadow:  3px 1px 20px 10px rgba(31, 22, 20, 0.8);
 }
 main .inputbox .inputfive {
-    box-shadow:  3px 1px 20px 10px rgb(255 99 71 / 50%);
-
+    box-shadow:  3px 1px 20px 10px rgba(31, 22, 20, 0.8);
 }
 main input .btn {
     width: 50%;
@@ -39,5 +38,6 @@ main input .btn {
 main .inputbox button {
     width: 50%;
     height: 100%;
-    box-shadow:  3px 1px 20px 10px rgb(255 99 71 / 50%);
+    box-shadow:  3px 1px 20px 10px rgba(31, 22, 20, 0.8);
+    border: 0px;
 }
