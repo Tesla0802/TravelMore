@@ -19,7 +19,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="./create.hotels.css">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsive.css" />
   </head>
@@ -104,15 +104,23 @@
     </header>
 
     <main>
-      <div class="card mb-3" id="card">
-        <img src="https://www.turebi.ge/uploads/photos/hotels/large/8715_1.jpg?v=1" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">გრინ თაუერი</h5>
-          <p class="card-text"><i class="fa-solid fa-location-dot"></i> მდებარეობა პ.სარაჯიშვილის 1, თბილისი, საქართველო <br> <i class="fa-solid fa-envelope"></i> ელ-ფოსტა:info@GTH.ge; Sales@GTH.ge; Reservation@GTH.ge</p>
-          <p class="card-text"><small class="text-muted" id="p">ფასი ერთი ღამე:170 ლარი</small></p>
-        </div>
-      </div>
-
+        <section class="inputbox">
+            <label for="inputone">Hotel name</label>
+            <input type="text " class="inputone" >
+            <label for="inputtwo">Hotel Location</label>
+            <input type="text" class="inputtwo">
+            <label for="inputthree">Contact</label>
+            <input type="text" class="inputthree">
+            <label for="inputfour">Price</label>
+            <input type="text"  class="inputfour">
+            <label for="inputGroupFile04">Uploud photo</label>
+            <div class="input-group">
+                <input type="file" class="form-control inputfive" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+               </div>
+               <div class="btn">
+                <button class="Btn">Uploud</button >
+               </div>
+        </section>
     </main>
 
     <script
@@ -128,5 +136,6 @@
     <script src="./firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
+    <script src="./create hotels.js"></script>
   </body>
 </html>
