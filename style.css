@@ -85,6 +85,15 @@ main .card .image img {
   width: 60%;
   height: 100%;
 }
+main .card .contact p .one {
+  font-size: 20px;
+}
+main .card .contact p .two {
+  font-size: 21px;
+}
+main .card .contact p .three {
+  font-size: 21px;
+}
 .log-out {
   display: none;
 }
