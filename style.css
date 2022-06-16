@@ -45,13 +45,13 @@ main {
   color: #ffffff;
 }
 main .card-body {
-  color: #136BAA;
+  color: #136baa;
 }
 main .card-body i {
   color: hwb(204 8% 76%);
 }
 main .card-body #p {
-  color: #136BAA !important;
+  color: #136baa !important;
 }
 main #image img {
   width: 180px;
