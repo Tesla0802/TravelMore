@@ -84,3 +84,7 @@ main #card {
 #photo {
   border-radius: 50%;
 }
+
+.btn {
+  border: none;
+}
