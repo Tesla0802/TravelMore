@@ -44,7 +44,7 @@ file.addEventListener("change", function () {
 });
 
 addElementInFirebase("profilePic/", {
-  picture: pic,
+  picture: imgDiv,
   image: img,
   files: file,
   uplButton: uploadebtn,
