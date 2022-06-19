@@ -15,7 +15,7 @@ BTN.addEventListener("click", () => {
     }
     let imgSrc =""
     const reader = new FileReader();
-    reader.readAsDataURL(image.files[0]);
+    reader.readAsDataURL(imgSrc.files[0]);
     reader.onload = () => {
         imgSrc = reader.result;
         console.log(imgSrc) 
