@@ -22,9 +22,11 @@ if (localStorage.getItem("userid")) {
   const logOut = document.querySelector(".log-out");
   const logIn = document.querySelector(".log-in");
   const signUp = document.querySelector(".sign-up");
+  const dropdownMenu = document.querySelector(".dropdown-menu");
   logIn.style.display = "none";
   signUp.style.display = "none";
   logOut.style.display = "inline-block";
+  dropdownMenu.style.height = "8rem";
   logOut.addEventListener("click", () => {
     localStorage.clear();
     location.reload();
@@ -43,9 +45,25 @@ file.addEventListener("change", function () {
   }
 });
 
-addElementInFirebase("profilePic/", {
-  picture: imgDiv,
-  image: img,
-  files: file,
-  uplButton: uploadebtn,
+uploadebtn.addEventListener("click", () => {
+  let imgSrc = "";
+  try {
+    const reader = new FileReader();
+    reader.readAsDataURL(img.files[0]);
+    reader.onload = () => {
+      imgSrc = reader.result;
+      addElementInFirebase("Post/", {
+        imgSrc: imgSrc,
+      });
+    };
+  } catch (err) {
+    imgSrc =
+      "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-6.png";
+    addElementInFirebase("profilePic/", {
+      imgSrc: imgSrc,
+    });
+  }
+  setTimeout(() => {
+    location.href = "index.html";
+  }, 1500);
 });
