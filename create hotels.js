@@ -19,7 +19,7 @@ BTN.addEventListener("click", () => {
       reader.readAsDataURL(image.files[0]);
       reader.onload = () => {
         imgSrc = reader.result;
-        addElementInFirebase("Post/", {
+        addElementInFirebase("Card/", {
           title: titleValue,
           text: textValue,
           imgSrc: imgSrc,
