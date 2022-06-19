@@ -22,6 +22,12 @@ header {
 .dropdown-menu {
   width: 100%;
   height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu ul {
+  direction: none;
 }
 
 header nav .collapse {
@@ -31,10 +37,33 @@ header nav .collapse {
 header nav .container-fluid {
   background-color: #ffffff;
 }
+
 main {
   width: 100%;
-  height: 100%;
+  display: grid;
+  place-items: center;
+  row-gap: 20px;
 }
+
+main .register {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+  color: #ffffff;
+}
+
+main .register .top h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main .register .bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 main .card {
   width: 100%;
   height: 100%;
@@ -43,15 +72,18 @@ main .card {
   background-color: transparent;
   border: 0px;
 }
+
 main .card .info {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
 }
+
 main .card .info div h1 {
   border-bottom: 1px solid black;
 }
+
 main .card .info div {
   width: 60%;
   display: flex;
@@ -59,41 +91,51 @@ main .card .info div {
   flex-direction: column;
   background-color: white;
 }
+
 main .card .info .p {
   width: 100%;
   border-bottom: 1px solid black;
   padding: 5px 30px 5px 30px;
 }
+
 main .card .info .p p {
   max-height: 130px;
   overflow-y: scroll;
 }
+
 main .card .info .contact {
   width: 65%;
   height: 100%;
   display: flex;
 }
+
 main .card .info .contact p {
   display: flex;
   justify-content: center;
 }
+
 main .card .image {
   width: 100%;
   height: 100%;
 }
+
 main .card .image img {
   width: 60%;
   height: 100%;
 }
+
 main .card .contact p .one {
   font-size: 20px;
 }
+
 main .card .contact p .two {
   font-size: 21px;
 }
+
 main .card .contact p .three {
   font-size: 21px;
 }
+
 main .card .info div div  {
   width: 100%;
   display: flex;
@@ -108,8 +150,9 @@ main .card .info div .contact p  i{
   padding: 0px 5px;
 }
 main .inputbox .inputtwo {
-  max-height: 100px;
+  max-height: 100px; 
 }
+
 .log-out {
   display: none;
 }
@@ -128,17 +171,21 @@ main .inputbox .inputtwo {
   background-color: #000000;
   border: 2px solid #555555;
 }
+
 main .left .cardright {
   display: flex;
   justify-content: flex-end;
 }
+
 .profile-pic {
   display: flex;
   justify-content: center;
 }
+
 .inputbox {
   gap: 5px;
 }
+
 .btn {
   border: none;
 }
@@ -179,12 +226,7 @@ main .left .cardright {
   box-shadow: 2px 4px 4px #000000a4;
 }
 
-.upload-your-hotel {
-  display: flex;
-  justify-content: center;
-}
-
-.upload-your-hotel .inputbox {
+.inputbox {
   width: 500px;
   display: flex;
   justify-content: center;
@@ -192,28 +234,35 @@ main .left .cardright {
   color: #ffffff;
   padding: 62px 10px 0px 14px;
 }
+
 .upload-your-hotel .inputbox .inputone {
   box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
 }
+
 .upload-your-hotel .inputbox .inputtwo {
   box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
 }
+
 .upload-your-hotel .inputbox .inputthree {
   box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
 }
+
 .upload-your-hotel .inputbox .inputfour {
   box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
 }
+
 .upload-your-hotel .inputbox .inputfive {
   box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
 }
+
 .upload-your-hotel input .btn {
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
 }
-.upload-your-hotel .inputbox button {
+
+main .inputbox button {
   width: 50%;
   height: 100%;
   box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
