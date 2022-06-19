@@ -94,6 +94,22 @@ main .card .contact p .two {
 main .card .contact p .three {
   font-size: 21px;
 }
+main .card .info div div  {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .card .info div div h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .card .info div .contact p  i{
+  padding: 0px 5px;
+}
+main .inputbox .inputtwo {
+  max-height: 100px;
+}
 .log-out {
   display: none;
 }
