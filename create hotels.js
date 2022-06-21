@@ -3,7 +3,7 @@ const number = document.querySelector(".inputtwo")
 const mail = document.querySelector(".inputthree")
 const place = document.querySelector(".inputfour")
 const text  = document.querySelector(".inputfive")
-// const image = document.querySelector(".inputsix")
+const image = document.querySelector(".inputsix")
 const BTN = document.querySelector(".Btn")
 BTN.addEventListener("click", () => {
     let inputoneValue = Name.value;
@@ -21,10 +21,17 @@ BTN.addEventListener("click", () => {
       reader.onload = () => {
         imgSrc = reader.result;
         addElementInFirebase("Card/", {
-          Name: titleValue,
-          text: textValue,
-          imgSrc: imgSrc,
+          // Name: titleValue,
+          // text: textValue,
+          // imgSrc: imgSrc,
           // imgSrc:image,
+          Name:inputoneValue,
+          number:inputtwoValue,
+          mail:inputthreeValue,
+          location:inputfourValue,
+          text:inputfiveValue,
+          imgSrc:imgSrc,
+          uploadTime: new Date().toLocaleString(),
         });
       };
     } catch (err) {
