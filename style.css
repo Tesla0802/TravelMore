@@ -6,12 +6,13 @@
 }
 
 body {
-  background-image: url("./img/wallpaper\ 1.jpg");
+  background-image: url("./img/bgDay.074ef37336b466c36b93.png");
   background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
 }
+
 
 header {
   width: 100%;
@@ -265,4 +266,8 @@ main .inputbox button {
   height: 100%;
   box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
   border: 0px;
+}
+
+.Night {
+  background-image: "";
 }

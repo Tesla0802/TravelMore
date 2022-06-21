@@ -2,6 +2,7 @@ const imgDiv = document.querySelector(".user-img");
 const img = document.querySelector("#photo");
 const file = document.querySelector("#file");
 const uploadebtn = document.querySelector(".uploadebtn");
+const Variability = document.querySelector(".Day-Night")
 
 function displayAlert(title, text, icon) {
   Swal.fire({
@@ -109,3 +110,25 @@ uploadebtn.addEventListener("click", () => {
     location.href = "index.html";
   }, 1500);
 });
+
+// Variability.addEventListener("click", () => {
+//   Variability.forEach((element) => {
+//     element.className = "Night"
+//   } )
+// })
+Variability.forEach((element) => {
+  element.addEventListener("click" , () => {
+    element.className = "Night"
+  } )
+})
+//     btnArray.forEach((element) => {​
+//   element.addEventListener("click", () => {​
+// element.textContent = "clicked";   //element.innerText = "Clicked";   //element.innerHTML = "<h1>Test</h1>";
+// element.remove();
+//     element.style.backgroundColor = "red";
+//  element.className = "bgColor";
+//   }​);
+//   element.addEventListener("mouseover", () => {​
+//     element.style.backgroundColor = "blue";
+//   }​);
+// }​);
