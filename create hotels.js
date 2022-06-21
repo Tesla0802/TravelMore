@@ -3,6 +3,7 @@ const number = document.querySelector(".inputtwo")
 const mail = document.querySelector(".inputthree")
 const place = document.querySelector(".inputfour")
 const text  = document.querySelector(".inputfive")
+// const image = document.querySelector(".inputsix")
 const BTN = document.querySelector(".Btn")
 BTN.addEventListener("click", () => {
     let inputoneValue = Name.value;
@@ -23,6 +24,7 @@ BTN.addEventListener("click", () => {
           Name: titleValue,
           text: textValue,
           imgSrc: imgSrc,
+          // imgSrc:image,
         });
       };
     } catch (err) {
@@ -34,6 +36,8 @@ BTN.addEventListener("click", () => {
          mail:inputthreeValue,
          location:inputfourValue,
          text:inputfiveValue,
+         imgSrc: imgSrc,
+        //  imgSrc:imgSrc,
          uploadTime: new Date().toLocaleString(),
       });
     }
