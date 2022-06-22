@@ -2,7 +2,8 @@ const imgDiv = document.querySelector(".user-img");
 const img = document.querySelector("#photo");
 const file = document.querySelector("#file");
 const uploadebtn = document.querySelector(".uploadebtn");
-const Variability = document.querySelector(".Day-Night")
+const Variability = document.querySelector(".Day-Night");
+const body = document.querySelector("body");
 
 function displayAlert(title, text, icon) {
   Swal.fire({
@@ -33,8 +34,6 @@ if (localStorage.getItem("userid")) {
     location.reload();
   });
 
- 
-}
 
 file.addEventListener("change", function () {
   const chooseFile = this.files[0];
@@ -48,34 +47,12 @@ file.addEventListener("change", function () {
   }
 });
 
-uploadebtn.addEventListener("click", () => {
-  let imgSrc = "";
-  try {
-    const reader = new FileReader();
-    reader.readAsDataURL(img.files[0]);
-    reader.onload = () => {
-      imgSrc = reader.result;
-      addElementInFirebase("Post/", {
-        imgSrc: imgSrc,
-      });
-    };
-  } catch (err) {
-    imgSrc =
-      "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-6.png";
-    addElementInFirebase("profilePic/", {
-      imgSrc: imgSrc,
-    });
-  }
-  setTimeout(() => {
-    location.href = "index.html";
-  }, 1500);
-});
-
 // Variability.addEventListener("click", () => {
 //   Variability.forEach((element) => {
 //     element.className = "Night"
 //   } )
 // })
+<<<<<<< HEAD
 Variability.forEach((element) => {
   element.addEventListener("click" , () => {
     element.className = "Night"
@@ -83,3 +60,20 @@ Variability.forEach((element) => {
 })
 
 
+=======
+Variability.addEventListener("click", () => {
+  body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+});
+
+//     btnArray.forEach((element) => {​
+//   element.addEventListener("click", () => {​
+// element.textContent = "clicked";   //element.innerText = "Clicked";   //element.innerHTML = "<h1>Test</h1>";
+// element.remove();
+//     element.style.backgroundColor = "red";
+//  element.className = "bgColor";
+//   }​);
+//   element.addEventListener("mouseover", () => {​
+//     element.style.backgroundColor = "blue";
+//   }​);
+// }​);
+>>>>>>> 46caa703ef4947d12ba781bca3b50fac64f7ba96
