@@ -28,10 +28,6 @@ BTN.addEventListener("click", () => {
     reader.onload = () => {
       imgSrc = reader.result;
       addElementInFirebase("Card/", {
-        // Name: titleValue,
-        // text: textValue,
-        // imgSrc: imgSrc,
-        // imgSrc:image,
         Name: inputoneValue,
         number: inputtwoValue,
         mail: inputthreeValue,
@@ -51,7 +47,6 @@ BTN.addEventListener("click", () => {
       location: inputfourValue,
       text: inputfiveValue,
       imgSrc: imgSrc,
-      //  imgSrc:imgSrc,
       uploadTime: new Date().toLocaleString(),
     });
   }
@@ -85,9 +80,13 @@ BTN.addEventListener("click", () => {
     reader.onload = () => {
       imgSrc = reader.result;
       addElementInFirebase("Card/", {
-        Name: titleValue,
-        text: textValue,
+        Name: inputoneValue,
+        number: inputtwoValue,
+        mail: inputthreeValue,
+        location: inputfourValue,
+        text: inputfiveValue,
         imgSrc: imgSrc,
+        uploadTime: new Date().toLocaleString(),
       });
     };
   } catch (err) {

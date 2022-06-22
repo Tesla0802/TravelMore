@@ -52,28 +52,8 @@ file.addEventListener("change", function () {
 //     element.className = "Night"
 //   } )
 // })
-<<<<<<< HEAD
-Variability.forEach((element) => {
-  element.addEventListener("click" , () => {
-    element.className = "Night"
-  } )
-})
 
-
-=======
 Variability.addEventListener("click", () => {
   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-});
+})}
 
-//     btnArray.forEach((element) => {​
-//   element.addEventListener("click", () => {​
-// element.textContent = "clicked";   //element.innerText = "Clicked";   //element.innerHTML = "<h1>Test</h1>";
-// element.remove();
-//     element.style.backgroundColor = "red";
-//  element.className = "bgColor";
-//   }​);
-//   element.addEventListener("mouseover", () => {​
-//     element.style.backgroundColor = "blue";
-//   }​);
-// }​);
->>>>>>> 46caa703ef4947d12ba781bca3b50fac64f7ba96
