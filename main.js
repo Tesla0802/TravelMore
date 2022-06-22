@@ -33,19 +33,10 @@ if (localStorage.getItem("userid")) {
     localStorage.clear();
     location.reload();
   });
-
-
-file.addEventListener("change", function () {
-  const chooseFile = this.files[0];
-  if (chooseFile) {
-    const reader = new FileReader();
-
-    reader.addEventListener("load", function () {
-      img.setAttribute("src", reader.result);
-    });
-    reader.readAsDataURL(chooseFile);
+  if(url === "signup.html" && url === "login.html" ){
+    dropdownMenu.style.height = "2rem";
   }
-});
+
 
 // Variability.addEventListener("click", () => {
 //   Variability.forEach((element) => {
