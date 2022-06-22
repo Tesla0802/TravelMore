@@ -32,47 +32,7 @@ if (localStorage.getItem("userid")) {
     localStorage.clear();
     location.reload();
   });
-  let cardAray = getArrayFromFirebase("Card")
-  const Card = document.querySelector(".card")
-  console.log(cardAray)
-  setTimeout(() => {
-    cardAray.forEach((element) => {
-      Card.innerHTML += `
-      <div class="card">
-      <div class="info">
-        <div>
-          <div>
-            <h1>${Name}</h1>
-          </div>
-          <div class="p">
-            <p>
-            ${text}
-            </p>
-          </div>
-          <div class="contact">
-            <p>
-              <i class="fa-solid fa-phone one"></i> ${number}
-            </p>
-            <p>
-              <i class="fa-solid fa-envelope two"></i> ${mail}
-            </p>
-            <p>
-              <i class="fa-solid fa-location-pin three"></i>${place}
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="image">
-        <img
-          src="${imgSrc}"
-          alt=""
-        />
-      </div>
-    </div>
-      
-      `
-    } )
-  }, 1500)
+
  
 }
 
@@ -122,14 +82,4 @@ Variability.forEach((element) => {
   } )
 })
 
-//     btnArray.forEach((element) => {​
-//   element.addEventListener("click", () => {​
-// element.textContent = "clicked";   //element.innerText = "Clicked";   //element.innerHTML = "<h1>Test</h1>";
-// element.remove();
-//     element.style.backgroundColor = "red";
-//  element.className = "bgColor";
-//   }​);
-//   element.addEventListener("mouseover", () => {​
-//     element.style.backgroundColor = "blue";
-//   }​);
-// }​);
+

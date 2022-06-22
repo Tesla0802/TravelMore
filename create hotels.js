@@ -3,6 +3,7 @@ const number = document.querySelector(".inputtwo");
 const mail = document.querySelector(".inputthree");
 const place = document.querySelector(".inputfour");
 const text = document.querySelector(".inputfive");
+const image = document.querySelector(".inputsix")
 const BTN = document.querySelector(".Btn");
 
 BTN.addEventListener("click", () => {
