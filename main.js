@@ -121,6 +121,7 @@ Variability.forEach((element) => {
     element.className = "Night"
   } )
 })
+
 //     btnArray.forEach((element) => {​
 //   element.addEventListener("click", () => {​
 // element.textContent = "clicked";   //element.innerText = "Clicked";   //element.innerHTML = "<h1>Test</h1>";
