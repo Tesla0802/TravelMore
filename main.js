@@ -2,7 +2,8 @@ const imgDiv = document.querySelector(".user-img");
 const img = document.querySelector("#photo");
 const file = document.querySelector("#file");
 const uploadebtn = document.querySelector(".uploadebtn");
-
+const Variability = document.querySelector(".Day-Night");
+const body = document.querySelector("body");
 function displayAlert(title, text, icon) {
   Swal.fire({
     icon: icon,
@@ -35,15 +36,10 @@ if (localStorage.getItem("userid")) {
     dropdownMenu.style.height = "2rem";
   }
 
-  // Variability.addEventListener("click", () => {
-  //   Variability.forEach((element) => {
-  //     element.className = "Night"
-  //   } )
-  // })
 
-  // Variability.addEventListener("click", () => {
-  //   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-  // })
-}
+Variability.addEventListener("click", () => {
+  body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+})}
 
-// $(".Day-Night").click.toogle
+
+
