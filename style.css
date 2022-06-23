@@ -13,6 +13,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body .dark {
+  background-image: url("./img/bgNigth.dda13b0508ea72b6b5f0.png");
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -267,9 +271,9 @@ main .inputbox button {
   border: 0px;
 }
 
-.Day{
+.Day {
   background-image: "https://travelmore-a0675.web.app/bgDay.074ef37336b466c36b93.png";
 }
-.Night{
+.Night {
   background-image: "https://travelmore-a0675.web.app/bgNigth.dda13b0508ea72b6b5f0.png";
 }
