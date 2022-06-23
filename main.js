@@ -2,10 +2,6 @@ const imgDiv = document.querySelector(".user-img");
 const img = document.querySelector("#photo");
 const file = document.querySelector("#file");
 const uploadebtn = document.querySelector(".uploadebtn");
-// const Variability = document.querySelector(".Day-Night");
-$(".Day-Night")
-console.log(".Day-Night")
-const body = document.querySelector("body");
 
 function displayAlert(title, text, icon) {
   Swal.fire({
@@ -35,29 +31,19 @@ if (localStorage.getItem("userid")) {
     localStorage.clear();
     location.reload();
   });
-  if(url === "signup.html" && url === "login.html" ){
+  if (url === "signup.html" && url === "login.html") {
     dropdownMenu.style.height = "2rem";
   }
 
+  // Variability.addEventListener("click", () => {
+  //   Variability.forEach((element) => {
+  //     element.className = "Night"
+  //   } )
+  // })
 
-// Variability.addEventListener("click", () => {
-//   Variability.forEach((element) => {
-//     element.className = "Night"
-//   } )
-// })
-
-// Variability.addEventListener("click", () => {
-//   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-// })}
-
+  // Variability.addEventListener("click", () => {
+  //   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+  // })
 }
-let logic = false,
-$(".Day-Night").click( () => {
-  $(".Day-Night").toggleClass("night")
-  if(logic){
-    $(".Day-Night").toggleClass("Day")
-  }else(
-    logic = !logic
-  )
-} )
+
 // $(".Day-Night").click.toogle
