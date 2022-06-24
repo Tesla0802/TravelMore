@@ -1,4 +1,3 @@
-// const imgDiv = document.querySelector(".user-img");
 const img = document.querySelector("#photo");
 const file = document.querySelector("#file");
 const uploadebtn = document.querySelector(".uploadebtn");
@@ -36,3 +35,9 @@ if (localStorage.getItem("userid")) {
     dropdownMenu.style.height = "2rem";
   }
 }
+if(!localStorage.getItem("userid")) {
+  if(location.href.split("/")[3] === "createhotel.html" ) {
+    location.href = "index.html";
+  }
+} 
+console.log(localStorage.getItem("userid"))
