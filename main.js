@@ -35,11 +35,4 @@ if (localStorage.getItem("userid")) {
   if (url === "signup.html" && url === "login.html") {
     dropdownMenu.style.height = "2rem";
   }
-
-
-Variability.addEventListener("click", () => {
-  body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-})}
-
-
-
+}
