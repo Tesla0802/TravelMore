@@ -47,3 +47,5 @@ Variability.addEventListener("click", () => {
   }
   logic = !logic;
 });
+
+localStorage.setitem(Variability);
