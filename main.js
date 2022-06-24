@@ -4,6 +4,8 @@ const file = document.querySelector("#file");
 const uploadebtn = document.querySelector(".uploadebtn");
 const Variability = document.querySelector(".Day-Night");
 const body = document.querySelector("body");
+let logic = true;
+
 function displayAlert(title, text, icon) {
   Swal.fire({
     icon: icon,
@@ -36,3 +38,12 @@ if (localStorage.getItem("userid")) {
     dropdownMenu.style.height = "2rem";
   }
 }
+
+Variability.addEventListener("click", () => {
+  if (logic) {
+    body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+  } else {
+    body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
+  }
+  logic = !logic;
+});
