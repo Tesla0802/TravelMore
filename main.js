@@ -28,7 +28,7 @@ if (localStorage.getItem("userid")) {
   logIn.style.display = "none";
   signUp.style.display = "none";
   logOut.style.display = "inline-block";
-  dropdownMenu.style.height = "8rem";
+  dropdownMenu.style.height = "10rem";
   logOut.addEventListener("click", () => {
     localStorage.clear();
     location.reload();
@@ -38,12 +38,12 @@ if (localStorage.getItem("userid")) {
   }
 }
 
-if(!localStorage.getItem("userid")) {
-  if(location.href.split("/")[3] === "createhotel.html" ) {
+if (!localStorage.getItem("userid")) {
+  if (location.href.split("/")[3] === "createhotel.html") {
     location.href = "index.html";
   }
-} 
-console.log(localStorage.getItem("userid"))
+}
+console.log(localStorage.getItem("userid"));
 Variability.addEventListener("click", () => {
   if (logic) {
     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";

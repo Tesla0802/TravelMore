@@ -54,42 +54,49 @@
                   >create your hotels</a
                 >
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  type="button"
-                  class="btn btn-outline-success dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Account
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <div class="user-img">
-                      <img src="./img/profile logo.png" id="photo" />
-                      <input type="file" id="file" />
-                      <label for="file" id="uploadebtn"
-                        ><i class="fas fa-camera"></i
-                      ></label>
+              <div class="dropdown">
+                <li class="nav-item dropdown">
+                  <a
+                    type="button"
+                    class="btn btn-outline-success dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <div class="user-img">
+                        <img src="./img/profile logo.png" id="photo" />
+                        <input type="file" id="file" />
+                        <label for="file" id="uploadebtn"
+                          ><i class="fas fa-camera"></i
+                        ></label>
+                      </div>
+                    </li>
+                    <div class="position">
+                      <li class="guest">guest</li>
+                      <li class="hotelMeneger">hotel meneger</li>
+                      <li class="admin">admin</li>
                     </div>
-                  </li>
-                  <li>
-                    <a class="dropdown-item log-in" href="./login.html"
-                      >Log In</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item sign-up" href="./signup.html"
-                      >Sign Up</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item log-out" href="./login.html"
-                      >Log Out</a
-                    >
-                  </li>
-                </ul>
-              </li>
+                    <li>
+                      <a class="dropdown-item log-in" href="./login.html"
+                        >Log In</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sign-up" href="./signup.html"
+                        >Sign Up</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item log-out" href="./login.html"
+                        >Log Out</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </div>
             </ul>
             <div class="form-check form-switch">
               <input
@@ -99,7 +106,7 @@
                 id="flexSwitchCheckDefault"
               />
             </div>
-            <div class="d-flex" >
+            <div class="d-flex">
               <input
                 class="form-control me-2 inputseven"
                 type="search"
