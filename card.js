@@ -4,7 +4,7 @@ let cardAray = getArrayFromFirebase("Card")
 const card = document.querySelector(".card")
 const displayAfter = document.querySelector(".displayafter");
 
-let logic =true
+let logic =true;
 setTimeout(() => {
   cardAray.forEach((element) => {
     card.innerHTML += `
