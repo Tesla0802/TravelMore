@@ -1,7 +1,7 @@
-let searchInput =document.querySelector(".inputseven")
-let BtnSearch =document.querySelector(".Btntwo")
-let cardAray = getArrayFromFirebase("Card")
-const card = document.querySelector(".card")
+let searchInput =document.querySelector(".inputseven");
+let BtnSearch =document.querySelector(".Btntwo");
+let cardAray = getArrayFromFirebase("Card");
+const card = document.querySelector(".card");
 const displayAfter = document.querySelector(".displayafter");
 
 let logic =true;
