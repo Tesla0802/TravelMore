@@ -4,6 +4,10 @@ const submitButton = document.querySelector("#submitButton");
 
 const userArray = getArrayFromFirebase("User");
 
+const guest = document.querySelector(".guest");
+const hotelMeneger = document.querySelector(".hotelMeneger");
+const admin = document.querySelector(".admin");
+
 submitButton.addEventListener("click", () => {
   let email = emailInput.value;
   let password = passwordInput.value;
@@ -16,6 +20,10 @@ submitButton.addEventListener("click", () => {
       return;
     }
   });
+  if (email === "admin@gmail.com" && password === "Adminadmin") {
+    guest.style.distplay = "none";
+    admin.style.distplay = "inline-block";
+  }
   if (!successAuth) {
     displayAlert("შეცდომა", "არ არსებობს მომხარებელი", "info");
     return;

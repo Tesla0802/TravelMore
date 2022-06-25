@@ -6,10 +6,6 @@ const submitButton = document.querySelector("#submitButton");
 
 const userArray = getArrayFromFirebase("User");
 
-const guest = document.querySelector(".guest");
-const hotelMeneger = document.querySelector(".hotelMeneger");
-const admin = document.querySelector(".admin");
-
 submitButton.addEventListener("click", () => {
   let name = nameInput.value;
   let last_name = lastnameInput.value;
@@ -23,19 +19,7 @@ submitButton.addEventListener("click", () => {
       return;
     }
   });
-  if (
-    element.data.email === "admin@gmail.com" &&
-    element.data.password === "Adminadmin"
-  ) {
-    guest.style.distplay = "none";
-    admin.style.distplay = "inline-block";
-  }
-  addElementInFirebase("User/", {
-    name: name,
-    last_name: last_name,
-    email: email,
-    password: password,
-  });
+
   displayAlert("მოგესალმებით", "ადმინი წარმატებით შევიდა სისტემაში", "success");
   if (alreadyUsedEmail) {
     displayAlert("შეცდომა", "უკვე არსებობს ესეთი იმეილი", "info");
