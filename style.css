@@ -89,75 +89,75 @@ main .register .bottom {
   grid-template-columns: 1fr;
 }
 
-main .card .info div h1 {
+
+main .card {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: 0px;
+}
+.flip-card {
+background-color: transparent;
+width: 800px;
+height: 400px;
+perspective: 1000px; 
+}
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+.flip-card-front img {
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+}
+.flip-card-back {
+background-color: #2FADD9;
+color: white;
+transform: rotateY(180deg);
+}
+.flip-card-back .title {
   border-bottom: 1px solid black;
 }
-
-main .card .info div {
-  width: 60%;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  background-color: white;
-}
-
-main .card .info .p {
+.flip-card-back .text {
   width: 100%;
   border-bottom: 1px solid black;
   padding: 5px 30px 5px 30px;
 }
-
-main .card .info .p p {
+.flip-card-back .text p {
   max-height: 130px;
   overflow-y: scroll;
 }
-
-main .card .info .contact {
-  width: 65%;
-  height: 100%;
-  display: flex;
-}
-
-main .card .info .contact p {
+.flip-card-back .contact {
+  width: 40%;
+  height: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-main .card .image {
-  width: 100%;
-  height: 100%;
-}
-
-main .card .image img {
-  width: 60%;
-  height: 100%;
-}
-
-main .card .contact p .one {
-  font-size: 20px;
-}
-
-main .card .contact p .two {
-  font-size: 21px;
-}
-
-main .card .contact p .three {
-  font-size: 21px;
-}
-
-main .card .info div div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-main .card .info div div h1 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-main .card .info div .contact p i {
+.flip-card-back .contact p i {
+  color: #1d1d1d;
   padding: 0px 5px;
-}
+} 
 main .inputbox .inputtwo {
   max-height: 100px;
 }
@@ -166,21 +166,25 @@ main .inputbox .inputtwo {
   display: none;
 }
 
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: #f5f5f5;
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  border: 2px solid #555555;
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }
-
 main .left .cardright {
   display: flex;
   justify-content: flex-end;
