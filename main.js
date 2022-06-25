@@ -51,6 +51,6 @@ Variability.addEventListener("click", () => {
     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
   }
   logic = !logic;
+  localStorage.setitem(Variability);
 });
 
-localStorage.setitem(Variability);
