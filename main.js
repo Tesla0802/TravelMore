@@ -45,33 +45,33 @@ if (!localStorage.getItem("userid")) {
 }
 Variability.addEventListener("click", () => {
   if (logic) {
-    localStorage.setItem("user", Night)
+    localStorage.setItem("user", true)
     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
   } else {
-    localStorage.setItem("user", Day ) 
+    localStorage.setItem("user", false ) 
     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
   }
   logic = !logic;
-  if(localStorage.setItem == ("user", Night )) {
+  if(localStorage.setItem == ("user", true )) {
     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-  }else if(localStorage.setItem == ("user", Day ) ) {
-    body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
+  }else if(localStorage.setItem == ("user", false ) ) {
+      body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
+    }
+  // if (logic) {
+  //   localStorage.setItem("user", Night)
+  //   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+  // } else {
+  //   localStorage.setItem("user", Day ) 
+  //   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
+  // }
+  // logic = !logic;
+  // if(localStorage.setItem == ("user", Night )) {
+  //   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+  // }else if(localStorage.setItem == ("user", Day ) ) {
+  //   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
 
-  }
+  // }
 });
-// if (logic) {
-//   localStorage.setItem("user", true)
-//   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-// } else {
-//   localStorage.setItem("user", false ) 
-//   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
-// }
-// logic = !logic;
-// if(localStorage.setItem == ("user", true )) {
-//   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-// }else if(localStorage.setItem == ("user", false ) ) {
-//   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
 
-// }
 
 
