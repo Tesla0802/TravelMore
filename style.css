@@ -23,9 +23,32 @@ header {
   background-color: transparent;
 }
 
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+
 .dropdown-menu {
   width: 100%;
-  height: 10rem;
+  height: 12rem;
+}
+
+.position {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.guest {
+  color: #808080;
+}
+
+.hotelMeneger {
+  display: none;
+}
+
+.admin {
+  display: none;
 }
 
 .dropdown-menu ul {
