@@ -3,6 +3,11 @@ const BtnSearch = document.querySelector(".Btntwo");
 const cardAray = getArrayFromFirebase("Card");
 const Card = document.querySelector(".card");
 const displayAfter = document.querySelector(".displayafter");
+const BTN2 = document.querySelector("#Btn2");
+let NavbarItems  = document.querySelector("#li")
+const userArray = getArrayFromFirebase("User");
+const userId = localStorage.getItem("userid")
+
 
 setTimeout(() => {
   cardAray.forEach((element) => {
@@ -126,3 +131,21 @@ function deletePost(key) {
   removeElementFromFirebase("Card", key);
   location.reload();
 }
+BTN2.addEventListener("click", () => {
+  NavbarItems.innerHTML += `
+  <a class="nav-link" href="./editcard.html"
+  >Edit Card</a
+>`
+ location.href = "editcard.html"
+ setTimeout(() => {
+  if(userId) {
+    let cuerrentUser = {};
+    userArray.forEach((element) => {
+      if(element.userid === userId) {
+        cuerrentUser = element ;
+      return;
+      }
+    } )
+  }
+ },2000)
+} )
