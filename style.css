@@ -5,16 +5,18 @@
   padding: 0px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-image: url("./img/bgDay.074ef37336b466c36b93.png");
   background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
-}
-
-body .dark {
-  background-image: url("./img/bgNigth.dda13b0508ea72b6b5f0.png");
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 header {
@@ -89,40 +91,43 @@ main .register .bottom {
   grid-template-columns: 1fr;
 }
 
-
 main .card {
   display: flex;
   justify-content: center;
   background-color: transparent;
   border: 0px;
+  gap: 50px;
 }
+
 .flip-card {
-background-color: transparent;
-width: 800px;
-height: 400px;
-perspective: 1000px; 
+  background-color: transparent;
+  width: 800px;
+  height: 400px;
+  perspective: 1000px;
 }
+
 .flip-card-inner {
-position: relative;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 0.8s;
-transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 .flip-card:hover .flip-card-inner {
-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-.flip-card-front, .flip-card-back {
-position: absolute;
-width: 100%;
-height: 100%;
--webkit-backface-visibility: hidden; /* Safari */
-backface-visibility: hidden;
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 .flip-card-front {
-background-color: #bbb;
-color: black;
+  background-color: #bbb;
+  color: black;
 }
 .flip-card-front img {
   width: 800px;
@@ -130,17 +135,19 @@ color: black;
   background-size: cover;
 }
 .flip-card-back {
-background-color: #2FADD9;
-color: white;
-transform: rotateY(180deg);
+  background-color: #2fadd9;
+  transform: rotateY(180deg);
 }
+
 .flip-card-back .title {
   border-bottom: 1px solid black;
+  color: #ffffff;
 }
 .flip-card-back .text {
   width: 100%;
   border-bottom: 1px solid black;
   padding: 5px 30px 5px 30px;
+  color: #ffffff;
 }
 .flip-card-back .text p {
   max-height: 130px;
@@ -153,11 +160,12 @@ transform: rotateY(180deg);
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #ffffff;
 }
 .flip-card-back .contact p i {
   color: #1d1d1d;
   padding: 0px 5px;
-} 
+}
 main .inputbox .inputtwo {
   max-height: 100px;
 }
@@ -166,24 +174,21 @@ main .inputbox .inputtwo {
   display: none;
 }
 
-::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #b1eafd;
 }
 
-::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #b1eafd;
 }
 
-::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
 }
 main .left .cardright {
   display: flex;

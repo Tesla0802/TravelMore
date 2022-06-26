@@ -4,7 +4,6 @@ const cardAray = getArrayFromFirebase("Card");
 const card = document.querySelector(".card");
 const displayAfter = document.querySelector(".displayafter");
 
-
 setTimeout(() => {
   cardAray.forEach((element) => {
     card.innerHTML += `    
@@ -36,9 +35,9 @@ setTimeout(() => {
         </div>
       </div>
 </div>
-    `
-  } )
-}, 3000)
+    `;
+  });
+}, 3000);
 BtnSearch.addEventListener("click", () => {
   let searchResult = searchInput.value;
   if (logic) {
@@ -62,8 +61,8 @@ BtnSearch.addEventListener("click", () => {
         "question"
       );
       setTimeout(() => {
-        location.href = "index.html"
-      }, 2000 )
+        location.href = "index.html";
+      }, 2000);
     }
   } else {
     displayAfter.style.display = "none";
