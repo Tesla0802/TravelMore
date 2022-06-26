@@ -24,6 +24,8 @@ header {
   height: 100px;
   background-color: transparent;
   background-attachment: fixed;
+  position: fixed;
+  z-index: 101;
 }
 
 .dropdown {
@@ -97,7 +99,8 @@ main .card {
   justify-content: center;
   background-color: transparent;
   border: 0px;
-  gap: 50px;
+  gap: 20px;
+  margin-top: 80px;
 }
 
 .flip-card {
@@ -153,6 +156,7 @@ main .card {
 .flip-card-back .text p {
   max-height: 130px;
   overflow-y: scroll;
+  margin-bottom: 10px !important ;
 }
 .flip-card-back .contact {
   width: 40%;

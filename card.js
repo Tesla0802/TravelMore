@@ -1,12 +1,12 @@
-const searchInput = document.querySelector(".inputseven");
+const searchInput = document.querySelector("#inputseven");
 const BtnSearch = document.querySelector(".Btntwo");
 const cardAray = getArrayFromFirebase("Card");
-const card = document.querySelector(".card");
+const Card = document.querySelector(".card");
 const displayAfter = document.querySelector(".displayafter");
 
 setTimeout(() => {
   cardAray.forEach((element) => {
-    card.innerHTML += `    
+    Card.innerHTML += `    
     <div class="card">
     <div class="flip-card">
         <div class="flip-card-inner">
@@ -30,6 +30,11 @@ setTimeout(() => {
               <p>
                 <i class="fa-solid fa-location-pin three"></i> ${element.data.location}
               </p>
+              <p>
+                <i class="fa-solid fa-money-bill-1-wave"></i> ${element.data.Price}
+              </p>
+              <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
+              </p>
             </div>
           </div>
         </div>
@@ -38,10 +43,16 @@ setTimeout(() => {
     `;
   });
 }, 3000);
+
+// BtnSearch.addEventListener("click", () => {
+//   let searchResult = searchInput.value;
+//   car
+// }  )
 BtnSearch.addEventListener("click", () => {
   let searchResult = searchInput.value;
+  let logic = true;
   if (logic) {
-    card.style.display = "none";
+    Card.style.display = "none";
     let post = [];
     let found = false;
     cardAray.forEach((element) => {
@@ -67,7 +78,7 @@ BtnSearch.addEventListener("click", () => {
   } else {
     displayAfter.style.display = "none";
     displayAfter.innerHTML = "";
-    card.style.display = "flex";
+    Card.style.display = "flex";
   }
   logic = !logic;
   searchInput.value = "";
@@ -76,32 +87,37 @@ BtnSearch.addEventListener("click", () => {
 function displayData(displayElement, element, key) {
   displayElement.innerHTML += `
   <div class="card">
-  <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="${element.imgSrc}" alt="Avatar">
-        </div>
-        <div class="flip-card-back">
-          <div class="titl1e">
-            <h1>${element.Name}</h1>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="${element.imgSrc}" alt="Avatar">
           </div>
-          <div class="text">
-            <p>${element.data.text}</p>
-          </div>
-          <div class="contact">
-            <p>
-              <i class="fa-solid fa-phone one"></i> ${element.number}
-            </p>
-            <p>
-              <i class="fa-solid fa-envelope two"></i> ${element.mail}
-            </p>
-            <p>
-              <i class="fa-solid fa-location-pin three"></i> ${element.location}
-            </p>
+          <div class="flip-card-back">
+            <div class="title">
+              <h1>${element.Name}</h1>
+            </div>
+            <div class="text">
+              <p>${element.text}</p>
+            </div>
+            <div class="contact">
+              <p>
+                <i class="fa-solid fa-phone one"></i> ${element.number}
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope two"></i> ${element.mail}
+              </p>
+              <p>
+                <i class="fa-solid fa-location-pin three"></i> ${element.location}
+              </p>
+              <p>
+                <i class="fa-solid fa-money-bill-1-wave"></i> ${element.Price}
+              </p>
+              <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 </div>
   `;
 }
