@@ -18,7 +18,7 @@ setTimeout(() => {
               <h1>${element.data.Name}</h1>
             </div>
             <div class="text">
-              <p>${element.data.text}</p>
+              <p> .</p>
             </div>
             <div class="contact">
               <p>
@@ -29,6 +29,11 @@ setTimeout(() => {
               </p>
               <p>
                 <i class="fa-solid fa-location-pin three"></i> ${element.data.location}
+              </p>
+              <p>
+                <i class="fa-solid fa-money-bill-1-wave"></i> ${element.data.Price}
+              </p>
+              <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
               </p>
             </div>
           </div>
@@ -45,6 +50,7 @@ setTimeout(() => {
 // }  )
 BtnSearch.addEventListener("click", () => {
   let searchResult = searchInput.value;
+  let logic = true;
   if (logic) {
     Card.style.display = "none";
     let post = [];
@@ -81,32 +87,37 @@ BtnSearch.addEventListener("click", () => {
 function displayData(displayElement, element, key) {
   displayElement.innerHTML += `
   <div class="card">
-  <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="${element.imgSrc}" alt="Avatar">
-        </div>
-        <div class="flip-card-back">
-          <div class="titl1e">
-            <h1>${element.Name}</h1>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="${element.imgSrc}" alt="Avatar">
           </div>
-          <div class="text">
-            <p>${element.text}</p>
-          </div>
-          <div class="contact">
-            <p>
-              <i class="fa-solid fa-phone one"></i> ${element.number}
-            </p>
-            <p>
-              <i class="fa-solid fa-envelope two"></i> ${element.mail}
-            </p>
-            <p>
-              <i class="fa-solid fa-location-pin three"></i> ${element.location}
-            </p>
+          <div class="flip-card-back">
+            <div class="title">
+              <h1>${element.Name}</h1>
+            </div>
+            <div class="text">
+              <p> .</p>
+            </div>
+            <div class="contact">
+              <p>
+                <i class="fa-solid fa-phone one"></i> ${element.number}
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope two"></i> ${element.mail}
+              </p>
+              <p>
+                <i class="fa-solid fa-location-pin three"></i> ${element.location}
+              </p>
+              <p>
+                <i class="fa-solid fa-money-bill-1-wave"></i> ${element.Price}
+              </p>
+              <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 </div>
   `;
 }

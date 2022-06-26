@@ -155,6 +155,7 @@ main .card {
 .flip-card-back .text p {
   max-height: 130px;
   overflow-y: scroll;
+  margin-bottom: 10px !important ;
 }
 .flip-card-back .contact {
   width: 40%;
