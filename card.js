@@ -18,7 +18,7 @@ setTimeout(() => {
               <h1>${element.data.Name}</h1>
             </div>
             <div class="text">
-              <p> .</p>
+              <p>${element.data.text}</p>
             </div>
             <div class="contact">
               <p>
@@ -97,7 +97,7 @@ function displayData(displayElement, element, key) {
               <h1>${element.Name}</h1>
             </div>
             <div class="text">
-              <p> .</p>
+              <p>${element.text}</p>
             </div>
             <div class="contact">
               <p>
@@ -112,7 +112,7 @@ function displayData(displayElement, element, key) {
               <p>
                 <i class="fa-solid fa-money-bill-1-wave"></i> ${element.Price}
               </p>
-              <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
+              <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
               </p>
             </div>
           </div>
