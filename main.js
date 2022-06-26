@@ -77,23 +77,23 @@ Variability.addEventListener("click", () => {
   // }
 });
 
-// let scrollPrecentage = () => {
-//   let scrollProgress = document.getElementById("progress");
-//   let progressValue = document.getElementById("progress-value");
-//   let pos = document.documentElement.scrollTop;
-//   let calcHeight =
-//     document.documentElement.scrollHeight -
-//     document.documentElement.clientHeight;
-//   let scrollValue = Math.round((pos * 100) / calcHeight);
-//   scrollProgress.style.background = `conic-gradient(#009c7c ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
-// };
-// window.onscroll = scrollPrecentage;
-// window.onload = scrollPrecentage;
+let scrollPrecentage = () => {
+  let scrollProgress = document.querySelector("#progress");
+  let progressValue = document.querySelector("#progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  scrollProgress.style.background = `conic-gradient(#b1eafd ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+};
+window.onscroll = scrollPrecentage;
+window.onload = scrollPrecentage;
 
-// $(window).scroll(function () {
-//   if ($(document).scrollTop() > 20) {
-//     $(".navigation").addClass("fix-icon");
-//   } else {
-//     $(".navigation").removeClass("fix-icon");
-//   }
-// });
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 20) {
+    $(".navigation").addClass("fix-icon");
+  } else {
+    $(".navigation").removeClass("fix-icon");
+  }
+});
