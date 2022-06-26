@@ -1,12 +1,12 @@
-const searchInput = document.querySelector(".inputseven");
+const searchInput = document.querySelector("#inputseven");
 const BtnSearch = document.querySelector(".Btntwo");
 const cardAray = getArrayFromFirebase("Card");
-const card = document.querySelector(".card");
+const Card = document.querySelector(".card");
 const displayAfter = document.querySelector(".displayafter");
 
 setTimeout(() => {
   cardAray.forEach((element) => {
-    card.innerHTML += `    
+    Card.innerHTML += `    
     <div class="card">
     <div class="flip-card">
         <div class="flip-card-inner">
@@ -38,10 +38,15 @@ setTimeout(() => {
     `;
   });
 }, 3000);
+
+// BtnSearch.addEventListener("click", () => {
+//   let searchResult = searchInput.value;
+//   car
+// }  )
 BtnSearch.addEventListener("click", () => {
   let searchResult = searchInput.value;
   if (logic) {
-    card.style.display = "none";
+    Card.style.display = "none";
     let post = [];
     let found = false;
     cardAray.forEach((element) => {
@@ -67,7 +72,7 @@ BtnSearch.addEventListener("click", () => {
   } else {
     displayAfter.style.display = "none";
     displayAfter.innerHTML = "";
-    card.style.display = "flex";
+    Card.style.display = "flex";
   }
   logic = !logic;
   searchInput.value = "";
@@ -86,7 +91,7 @@ function displayData(displayElement, element, key) {
             <h1>${element.Name}</h1>
           </div>
           <div class="text">
-            <p>${element.data.text}</p>
+            <p>${element.text}</p>
           </div>
           <div class="contact">
             <p>
