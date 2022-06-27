@@ -131,21 +131,21 @@ function deletePost(key) {
   removeElementFromFirebase("Card", key);
   location.reload();
 }
-BTN2.addEventListener("click", () => {
-  NavbarItems.innerHTML += `
-  <a class="nav-link" href="./editcard.html"
-  >Edit Card</a
->`
- location.href = "editcard.html"
- setTimeout(() => {
-  if(userId) {
-    let cuerrentUser = {};
-    userArray.forEach((element) => {
-      if(element.userid === userId) {
-        cuerrentUser = element ;
-      return;
-      }
-    } )
-  }
- },2000)
-} )
+// BTN2.addEventListener("click", () => {
+//   NavbarItems.innerHTML += `
+//   <a class="nav-link" href="./editcard.html"
+//   >Edit Card</a
+// >`
+//  location.href = "editcard.html"
+//  setTimeout(() => {
+//   if(userId) {
+//     let cuerrentUser = {};
+//     userArray.forEach((element) => {
+//       if(element.userid === userId) {
+//         cuerrentUser = element ;
+//       return;
+//       }
+//     } )
+//   }
+//  },2000)
+// } )
