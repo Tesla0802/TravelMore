@@ -3,11 +3,7 @@ const BtnSearch = document.querySelector(".Btntwo");
 const cardAray = getArrayFromFirebase("Card");
 const Card = document.querySelector(".card");
 const displayAfter = document.querySelector(".displayafter");
-const BTN2 = document.querySelector("#Btn2");
-let NavbarItems  = document.querySelector("#li")
 const userArray = getArrayFromFirebase("User");
-const userId = localStorage.getItem("userid")
-
 
 setTimeout(() => {
   cardAray.forEach((element) => {
@@ -49,10 +45,6 @@ setTimeout(() => {
   });
 }, 3000);
 
-// BtnSearch.addEventListener("click", () => {
-//   let searchResult = searchInput.value;
-//   car
-// }  )
 BtnSearch.addEventListener("click", () => {
   let searchResult = searchInput.value;
   let logic = true;
@@ -131,6 +123,10 @@ function deletePost(key) {
   removeElementFromFirebase("Card", key);
   location.reload();
 }
+
+// BTN2.addEventListener("click", () => {
+//   location.href = "editcard.html"
+// } )
 // BTN2.addEventListener("click", () => {
 //   NavbarItems.innerHTML += `
 //   <a class="nav-link" href="./editcard.html"
