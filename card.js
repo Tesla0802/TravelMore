@@ -22,7 +22,7 @@ setTimeout(() => {
               <h1>${element.data.Name}</h1>
             </div>
             <div class="text">
-              <p>${element.text}</p>
+              <p>${element.data.text}</p>
             </div>
             <div class="contact">
               <p>
@@ -38,8 +38,6 @@ setTimeout(() => {
                 <i class="fa-solid fa-money-bill-1-wave"></i> ${element.data.Price}
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
-              </p>
-              <p>${element.data.type}
               </p>
             </div>
           </div>
@@ -116,8 +114,6 @@ function displayData(displayElement, element, key) {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
               </p>
-              <p>${element.data.type}
-              </p>
             </div>
           </div>
         </div>
@@ -151,3 +147,4 @@ function deletePost(key) {
 //   }
 //  },2000)
 // } )
+
