@@ -38,6 +38,7 @@ BTN.addEventListener("click", () => {
         text: inputfiveValue,
         Price : inputeightValue,
         imgSrc: imgSrc,
+        type : type,
         uploadTime: new Date().toLocaleString(),
       });
     };
