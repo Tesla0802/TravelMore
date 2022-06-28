@@ -39,12 +39,17 @@ setTimeout(() => {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
               </p>
-              <button class="btn btn-outline-warning Btntwo" type="submit">
+              <div class="card-btn">
+              <button class="btn btn-outline-warning edit" type="submit">
                 edit
               </button>
-              <button class="btn btn-outline-danger Btntwo" type="submit">
+              <button class="btn btn-outline-danger delete" type="submit">
                 delate
               </button>
+              <button class="btn btn-outline-success pay" type="submit">
+              pay
+            </button>
+            </div>
             </div>
           </div>
         </div>
@@ -124,6 +129,17 @@ function displayData(displayElement, element, key) {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
               </p>
+              <div class="card-btn">
+              <button class="btn btn-outline-warning edit" type="submit">
+                edit
+              </button>
+              <button class="btn btn-outline-danger delete" type="submit">
+                delate
+              </button>
+              <button class="btn btn-outline-success pay" type="submit">
+              pay
+            </button>
+            </div>
             </div>
           </div>
         </div>

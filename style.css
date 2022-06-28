@@ -175,14 +175,14 @@ main .card {
   color: #1d1d1d;
   padding: 0px 5px;
 }
-.flip-card-back .contact  .Edit {
+.flip-card-back .contact .Edit {
   width: 395%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
-.flip-card-back .contact  .Edit i {
+.flip-card-back .contact .Edit i {
   color: #1d1d1d;
   padding: 0px 5px;
 }
@@ -338,4 +338,10 @@ main .inputbox button {
 }
 .Night {
   background-image: "https://travelmore-a0675.web.app/bgNigth.dda13b0508ea72b6b5f0.png";
+}
+
+.card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

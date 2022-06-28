@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelMore</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./img/Logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">TravelMore</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./createhotel.html"
+                  >create your hotels</a
+                >
+              </li>
+              <li class="nav-item" id="li"></li>
+              <div class="dropdown">
+                <li class="nav-item dropdown">
+                  <a
+                    type="button"
+                    class="btn btn-outline-success dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <div class="user-img">
+                        <img src="./img/profile logo.png" id="photo" />
+                        <input type="file" id="file" />
+                        <label for="file" id="uploadebtn"
+                          ><i class="fas fa-camera"></i
+                        ></label>
+                      </div>
+                    </li>
+                    <div class="position">
+                      <li class="guest">guest</li>
+                      <li class="hotelMeneger">hotel meneger</li>
+                      <li class="admin">admin</li>
+                    </div>
+                    <li>
+                      <a class="dropdown-item log-in" href="./login.html"
+                        >Log In</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sign-up" href="./signup.html"
+                        >Sign Up</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item log-out" href="./login.html"
+                        >Log Out</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input Day-Night"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+            </div>
+            <div class="d-flex">
+              <input
+                id="inputseven"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success Btntwo" type="submit">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="bank"></div>
+    </main>
+    <script src="./pay.js"></script>
+  </body>
+</html>
