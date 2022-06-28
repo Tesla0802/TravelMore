@@ -3,21 +3,16 @@ const BtnSearch = document.querySelector(".Btntwo");
 const cardAray = getArrayFromFirebase("Card");
 const Card = document.querySelector(".card");
 const displayAfter = document.querySelector(".displayafter");
-<<<<<<< HEAD
-const userArray = getArrayFromFirebase("User");
-=======
 const BTN2 = document.querySelector("#Btn2");
 let NavbarItems = document.querySelector("#li");
 const userArray = getArrayFromFirebase("User");
 const userId = localStorage.getItem("userid");
->>>>>>> 6e1ee06fc856b970d41c7b7912949e81e39e1003
 
 setTimeout(() => {
   cardAray.forEach((element) => {
     Card.innerHTML += `    
     <div class="card">
     <div class="flip-card">
-<<<<<<< HEAD
     <div class="flip-card-inner">
     <div class="flip-card-front">
     <img src="${element.data.imgSrc}" alt="Avatar">
@@ -49,7 +44,6 @@ setTimeout(() => {
     </div>
     </div>
     </div>
-=======
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="${element.data.imgSrc}" alt="Avatar">
@@ -92,7 +86,6 @@ setTimeout(() => {
         </div>
       </div>
 </div>
->>>>>>> 6e1ee06fc856b970d41c7b7912949e81e39e1003
     `;
   });
 }, 3000);
@@ -163,10 +156,8 @@ function displayData(displayElement, element, key) {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
               </p>
-<<<<<<< HEAD
               <p>${type}
               </p>
-=======
               <div class="card-btn">
               <button class="btn btn-outline-warning edit" type="submit">
                 edit
@@ -178,7 +169,6 @@ function displayData(displayElement, element, key) {
               pay
             </button>
             </div>
->>>>>>> 6e1ee06fc856b970d41c7b7912949e81e39e1003
             </div>
           </div>
         </div>
@@ -192,11 +182,10 @@ function deletePost(key) {
   location.reload();
 }
 
-<<<<<<< HEAD
 // BTN2.addEventListener("click", () => {
 //   location.href = "editcard.html"
 // } )
-=======
+
 BTN2.addEventListener("click", () => {
   NavbarItems.innerHTML += `
   <a class="nav-link" href="./editcard.html"
@@ -216,7 +205,6 @@ BTN2.addEventListener("click", () => {
   }, 2000);
 });
 
->>>>>>> 6e1ee06fc856b970d41c7b7912949e81e39e1003
 // BTN2.addEventListener("click", () => {
 //   NavbarItems.innerHTML += `
 //   <a class="nav-link" href="./editcard.html"
