@@ -1,6 +1,3 @@
-const img = document.querySelector("#photo");
-const file = document.querySelector("#file");
-const uploadebtn = document.querySelector(".uploadebtn");
 const Variability = document.querySelector(".form-switch");
 const body = document.querySelector("body");
 const card = document.querySelector(".flip-card-back");
@@ -12,6 +9,17 @@ function displayAlert(title, text, icon) {
     title: title,
   });
 }
+
+// file.addEventListener("cange", function () {
+//   const choosedfile = this.file[0];
+//   if (choosedfile) {
+//     const reader = new FileReader();
+//     reader.addEventListener("load", function () {
+//       img.setAttribute("src", reader.result);
+//     });
+//     reader.readAsDataURL(choosedfile);
+//   }
+// });
 
 if (localStorage.getItem("userid")) {
   let url = location.href.split("/")[3];

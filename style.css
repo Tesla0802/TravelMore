@@ -26,6 +26,7 @@ header {
   background-attachment: fixed;
   position: fixed;
   z-index: 101;
+  margin-bottom: 20px;
 }
 
 .dropdown {
