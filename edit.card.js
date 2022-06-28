@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const BTN2 = document.querySelector("#Btn2");
 const Name = document.querySelector(".inputone");
 const number = document.querySelector(".inputtwo");
@@ -28,7 +28,7 @@ setTimeout(() => {
   LastName.innerHTML = `${cuerrentUser.data.Name}`
   
 }, 2000)
-=======
+
 const edit = document.querySelector(".edit");
 const del = document.querySelector(".delete");
 const card = document.querySelector(".card");
@@ -130,4 +130,4 @@ function displayData(displayElement, element, key) {
 </div>
   `;
 }
->>>>>>> 6e1ee06fc856b970d41c7b7912949e81e39e1003
+
