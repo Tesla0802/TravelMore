@@ -13,3 +13,4 @@ file.addEventListener("change", function () {
     reader.readAsDataURL(chooseFile);
   }
 });
+

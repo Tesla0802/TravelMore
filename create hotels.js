@@ -14,6 +14,7 @@ BTN.addEventListener("click", () => {
   let inputfourValue = place.value;
   let inputfiveValue = text.value;
   let inputeightValue = Price.value;
+  let Admin = Type;
   if (
     inputoneValue === "" ||
     inputtwoValue === "" ||
@@ -38,7 +39,6 @@ BTN.addEventListener("click", () => {
         text: inputfiveValue,
         Price : inputeightValue,
         imgSrc: imgSrc,
-        type : type,
         uploadTime: new Date().toLocaleString(),
       });
     };
@@ -53,7 +53,6 @@ BTN.addEventListener("click", () => {
       text: inputfiveValue,
       Price : inputeightValue,
       imgSrc: imgSrc,
-      type : type,
       uploadTime: new Date().toLocaleString(),
     });
   }

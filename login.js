@@ -30,3 +30,7 @@ submitButton.addEventListener("click", () => {
     location.href = "index.html";
   }, 1000);
 });
+
+addElementInFirebase("Profilepic/", {
+  
+} )

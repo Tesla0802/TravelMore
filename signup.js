@@ -3,6 +3,7 @@ const lastnameInput = document.querySelector("#lastname");
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
 const submitButton = document.querySelector("#submitButton");
+const Type = document.querySelector("#Admin")
 
 const userArray = getArrayFromFirebase("User");
 const acc = document.querySelector(".dropdown-menu");
@@ -14,7 +15,8 @@ submitButton.addEventListener("click", () => {
   let last_name = lastnameInput.value;
   let email = emailInput.value;
   let password = passwordInput.value;
-  if (name == "" || last_name == "" || email == "" || password == "") return;
+  let type = Type.value
+  if (name == "" || last_name == "" || email == "" || password == "" || type == "") return;
   let alreadyUsedEmail = false;
   userArray.forEach((element) => {
     if (element.data.email === email) {
@@ -33,6 +35,10 @@ submitButton.addEventListener("click", () => {
     last_name: last_name,
     email: email,
     password: password,
+    type : type,
   });
   displayAlert("შესრულდა", "წარმატებით დაემატა მომხარებელი", "success");
+  setTimeout(() => {
+    location.href = "login.html"
+  },1500)
 });
