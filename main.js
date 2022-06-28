@@ -77,3 +77,15 @@ localStorage.setItem("Variability", Variability);
 //   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
 
 // }
+setTimeout(() => {
+  getArrayFromFirebase("User/", {
+    name: name,
+    last_name: last_name,
+    email: email,
+    password: password,
+    type : type,
+    if(type = "Admin") {
+      BTN2.style.display = "inline-block"
+    }
+  } )
+}, 2000 )

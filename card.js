@@ -7,6 +7,8 @@ const BTN2 = document.querySelector("#Btn2");
 let NavbarItems = document.querySelector("#li");
 const userArray = getArrayFromFirebase("User");
 const userId = localStorage.getItem("userid");
+const lastnameInput = document.querySelector("#lastname");
+
 
 setTimeout(() => {
   cardAray.forEach((element) => {
@@ -135,12 +137,7 @@ function deleteCard(key) {
 // getArrayFromFirebase("User/", {
 //   console.log()
 // } )
-console.log(getArrayFromFirebase("User/", ) )
-getArrayFromFirebase("Usuer/", {
-  if(Type ="Admin") {
-    BTN2.style.display = "flex"
-  }
-} )
+
 
 
 
