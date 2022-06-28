@@ -1,7 +1,7 @@
 const img = document.querySelector("#photo");
 const file = document.querySelector("#file");
 const uploadebtn = document.querySelector(".uploadebtn");
-const Variability = document.querySelector(".Day-Night");
+const Variability = document.querySelector(".form-switch");
 const body = document.querySelector("body");
 const card = document.querySelector(".flip-card-back");
 
@@ -45,34 +45,27 @@ if (!localStorage.getItem("userid")) {
     location.href = "index.html";
   }
 }
+
 Variability.addEventListener("click", () => {
   if (logic) {
-    localStorage.setItem("user", true);
     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-    card.style.backgroundColor = "#182f3f";
   } else {
-    localStorage.setItem("user", false);
     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
-    card.style.backgroundColor = "#2fadd9";
   }
   logic = !logic;
-  if (localStorage.setItem == ("user", true)) {
-    body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-  } else if (localStorage.setItem == ("user", false)) {
-    body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
-  }
-  // if (logic) {
-  //   localStorage.setItem("user", Night)
-  //   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-  // } else {
-  //   localStorage.setItem("user", Day )
-  //   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
-  // }
-  // logic = !logic;
-  // if(localStorage.setItem == ("user", Night )) {
-  //   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-  // }else if(localStorage.setItem == ("user", Day ) ) {
-  //   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
-
-  // }
 });
+
+// if (logic) {
+//   localStorage.setItem("user", Night)
+//   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+// } else {
+//   localStorage.setItem("user", Day )
+//   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
+// }
+// logic = !logic;
+// if(localStorage.setItem == ("user", Night )) {
+//   body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+// }else if(localStorage.setItem == ("user", Day ) ) {
+//   body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
+
+// }

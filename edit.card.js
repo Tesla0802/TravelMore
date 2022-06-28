@@ -99,10 +99,3 @@ function displayData(displayElement, element, key) {
 </div>
   `;
 }
-
-//del.addEventListener("click", () => {
-function deletePost(key) {
-  removeElementFromFirebase(".card", key);
-  location.reload();
-}
-//});
