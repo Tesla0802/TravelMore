@@ -13,37 +13,39 @@ setTimeout(() => {
     Card.innerHTML += `    
     <div class="card">
     <div class="flip-card">
-    <div class="flip-card-inner">
-    <div class="flip-card-front">
-    <img src="${element.data.imgSrc}" alt="Avatar">
-    </div>
-    <div class="flip-card-back">
-    <div class="title">
-    <h1>${element.data.Name}</h1>
-    </div>
-    <div class="text">
-    <p>${element.data.text}</p>
-    </div>
-    <div class="contact">
-    <p>
-    <i class="fa-solid fa-phone one"></i> ${element.data.number}
-    </p>
-    <p>
-    <i class="fa-solid fa-envelope two"></i> ${element.data.mail}
-    </p>
-    <p>
-    <i class="fa-solid fa-location-pin three"></i> ${element.data.location}
-    </p>
-    <p>
-    <i class="fa-solid fa-money-bill-1-wave"></i> ${element.data.Price}
-    </p>
-    <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
-    </p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="${element.data.imgSrc}" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <div class="title">
+              <h1>${element.data.Name}</h1>
+            </div>
+            <div class="text">
+              <p>${element.text}</p>
+            </div>
+            <div class="contact">
+              <p>
+                <i class="fa-solid fa-phone one"></i> ${element.data.number}
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope two"></i> ${element.data.mail}
+              </p>
+              <p>
+                <i class="fa-solid fa-location-pin three"></i> ${element.data.location}
+              </p>
+              <p>
+                <i class="fa-solid fa-money-bill-1-wave"></i> ${element.data.Price}
+              </p>
+              <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
+              </p>
+              <p>${element.data.type}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
     `;
   });
 }, 3000);
@@ -114,7 +116,7 @@ function displayData(displayElement, element, key) {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
               </p>
-              <p>${type}
+              <p>${element.data.type}
               </p>
             </div>
           </div>
@@ -122,17 +124,6 @@ function displayData(displayElement, element, key) {
       </div>
 </div>
   `;
-  // <div class="card-btn">
-  //             <button class="btn btn-outline-warning edit" type="submit">
-  //               edit
-  //             </button>
-  //             <button class="btn btn-outline-danger delete" type="submit">
-  //               delate
-  //             </button>
-  //             <button class="btn btn-outline-success pay" type="submit">
-  //             pay
-  //           </button>
-  //           </div>
 }
 
 function deletePost(key) {
@@ -140,28 +131,7 @@ function deletePost(key) {
   location.reload();
 }
 
-// BTN2.addEventListener("click", () => {
-//   location.href = "editcard.html"
-// } )
 
-BTN2.addEventListener("click", () => {
-  NavbarItems.innerHTML += `
-  <a class="nav-link" href="./editcard.html"
-  >Edit Card</a
->`;
-  location.href = "editcard.html";
-  setTimeout(() => {
-    if (userId) {
-      let cuerrentUser = {};
-      userArray.forEach((element) => {
-        if (element.userid === userId) {
-          cuerrentUser = element;
-          return;
-        }
-      });
-    }
-  }, 2000);
-});
 
 // BTN2.addEventListener("click", () => {
 //   NavbarItems.innerHTML += `

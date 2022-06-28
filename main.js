@@ -2,8 +2,6 @@ const Variability = document.querySelector(".form-switch");
 const body = document.querySelector("body");
 const card = document.querySelector(".flip-card-back");
 
-let logic = true;
-
 function displayAlert(title, text, icon) {
   Swal.fire({
     icon: icon,
