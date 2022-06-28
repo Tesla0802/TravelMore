@@ -10,37 +10,37 @@ setTimeout(() => {
     Card.innerHTML += `    
     <div class="card">
     <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="${element.data.imgSrc}" alt="Avatar">
-          </div>
-          <div class="flip-card-back">
-            <div class="title">
-              <h1>${element.data.Name}</h1>
-            </div>
-            <div class="text">
-              <p>${element.data.text}</p>
-            </div>
-            <div class="contact">
-              <p>
-                <i class="fa-solid fa-phone one"></i> ${element.data.number}
-              </p>
-              <p>
-                <i class="fa-solid fa-envelope two"></i> ${element.data.mail}
-              </p>
-              <p>
-                <i class="fa-solid fa-location-pin three"></i> ${element.data.location}
-              </p>
-              <p>
-                <i class="fa-solid fa-money-bill-1-wave"></i> ${element.data.Price}
-              </p>
-              <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img src="${element.data.imgSrc}" alt="Avatar">
+    </div>
+    <div class="flip-card-back">
+    <div class="title">
+    <h1>${element.data.Name}</h1>
+    </div>
+    <div class="text">
+    <p>${element.data.text}</p>
+    </div>
+    <div class="contact">
+    <p>
+    <i class="fa-solid fa-phone one"></i> ${element.data.number}
+    </p>
+    <p>
+    <i class="fa-solid fa-envelope two"></i> ${element.data.mail}
+    </p>
+    <p>
+    <i class="fa-solid fa-location-pin three"></i> ${element.data.location}
+    </p>
+    <p>
+    <i class="fa-solid fa-money-bill-1-wave"></i> ${element.data.Price}
+    </p>
+    <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     `;
   });
 }, 3000);
@@ -80,7 +80,7 @@ BtnSearch.addEventListener("click", () => {
   logic = !logic;
   searchInput.value = "";
 });
-
+let type;
 function displayData(displayElement, element, key) {
   displayElement.innerHTML += `
   <div class="card">
@@ -110,6 +110,8 @@ function displayData(displayElement, element, key) {
                 <i class="fa-solid fa-money-bill-1-wave"></i> ${element.Price}
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
+              </p>
+              <p>${type}
               </p>
             </div>
           </div>
