@@ -35,7 +35,7 @@ submitButton.addEventListener("click", () => {
     last_name: last_name,
     email: email,
     password: password,
-    type : type,
+    type : type, 
   });
   displayAlert("შესრულდა", "წარმატებით დაემატა მომხარებელი", "success");
   setTimeout(() => {

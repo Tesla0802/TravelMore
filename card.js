@@ -7,7 +7,7 @@ const BTN2 = document.querySelector("#Btn2");
 let NavbarItems = document.querySelector("#li");
 const userArray = getArrayFromFirebase("User");
 const userId = localStorage.getItem("userid");
-const lastnameInput = document.querySelector("#lastname");
+// const lastnameInput = document.querySelector("#lastname");
 
 
 setTimeout(() => {
@@ -41,8 +41,8 @@ setTimeout(() => {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
               </p>
-              <button style="display: none;"  id="Btn2" type="button" class="btn btn-outline-info">
-              Delete ${element.data.key}
+              <button onclick="Delete(${element.userIdkey}) "   id="Btn2" type="button" class="btn btn-outline-info">
+              Delete 
             </button>
             </div>
           </div>
@@ -119,8 +119,8 @@ function displayData(displayElement, element, key) {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
               </p>
-              <button style="display: none;"  id="Btn2" type="button" class="btn btn-outline-info">
-              Delete ${element.data.key}
+              <button.onclick="${element.userIdkey}" "  id="Btn2" type="button" class="btn btn-outline-info">
+              Delete 
             </button>
             </div>
           </div>
@@ -130,7 +130,7 @@ function displayData(displayElement, element, key) {
   `;
 }
 
-function deleteCard(key) {
+function Delete(key) {
   removeElementFromFirebase("Card", key);
   location.reload();
 }
