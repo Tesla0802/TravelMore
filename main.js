@@ -54,14 +54,16 @@ if (!localStorage.getItem("userid")) {
   }
 }
 
-Variability.addEventListener("click", () => {
+Variability.onclick = function () {
   if (logic) {
     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
   } else {
     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
   }
   logic = !logic;
-});
+};
+
+localStorage.setItem("Variability", Variability);
 
 // if (logic) {
 //   localStorage.setItem("user", Night)

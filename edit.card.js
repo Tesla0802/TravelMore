@@ -1,4 +1,3 @@
-
 const BTN2 = document.querySelector("#Btn2");
 const Name = document.querySelector(".inputone");
 const number = document.querySelector(".inputtwo");
@@ -13,21 +12,20 @@ const userId = localStorage.getItem("userid");
 // BTN2.addEventListener("click", () => {
 //   location.href = "editcard.html"
 // } )
-const LastName = document.querySelector ("#name")
+const LastName = document.querySelector("#name");
 const CardAray = getArrayFromFirebase("Card");
-setTimeout(() => { 
-  if(userId) {
+setTimeout(() => {
+  if (userId) {
     let cuerrentUser = {};
     userArray.forEach((element) => {
-      if(element.userid === userId) {
-        cuerrentUser = element ;
-      return;
+      if (element.userid === userId) {
+        cuerrentUser = element;
+        return;
       }
-    } )
+    });
   }
-  LastName.innerHTML = `${cuerrentUser.data.Name}`
-  
-}, 2000)
+  LastName.innerHTML = `${cuerrentUser.data.Name}`;
+}, 2000);
 
 const edit = document.querySelector(".edit");
 const del = document.querySelector(".delete");
@@ -130,4 +128,3 @@ function displayData(displayElement, element, key) {
 </div>
   `;
 }
-
