@@ -10,7 +10,7 @@ const submitButton = document.querySelector("#submitButton");
 const Type = document.querySelector("#Admin")
 
 
-let logic = true;
+
 
 function displayAlert(title, text, icon) {
   Swal.fire({
@@ -62,7 +62,6 @@ if (!localStorage.getItem("userid")) {
   }
 }
 
-<<<<<<< HEAD
 
 // Variability.addEventListener("click", () => {
 //   if (logic) {
@@ -88,26 +87,21 @@ if (!localStorage.getItem("userid")) {
 let logic = true
 Variability.addEventListener("click",  () => {
   if(logic) {
-=======
+
 Variability.addEventListener("click", () => {
   if (logic) {
->>>>>>> 5f0fe05fc78b858e05e5ef0cccd327a473b75931
     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
   } else {
     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
   }
-<<<<<<< HEAD
+
   logic = !logic
 }  )
 
-=======
   logic = !logic;
-});
->>>>>>> 5f0fe05fc78b858e05e5ef0cccd327a473b75931
+} }) ;
 
 // document.body.classList.add(localStorage.getItem("lightDark"));
-
-<<<<<<< HEAD
 
 
 // Variability.addEventListener("click", function () {
@@ -133,6 +127,4 @@ Variability.addEventListener("click", () => {
 //   logic = !logic;
 
 // });
-=======
 // }})
->>>>>>> 5f0fe05fc78b858e05e5ef0cccd327a473b75931
