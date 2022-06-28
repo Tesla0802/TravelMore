@@ -4,10 +4,6 @@ const submitButton = document.querySelector("#submitButton");
 
 const userArray = getArrayFromFirebase("User");
 
-const guest = document.querySelector(".guest");
-const hotelMeneger = document.querySelector(".hotelMeneger");
-const admin = document.querySelector(".admin");
-
 submitButton.addEventListener("click", () => {
   let email = emailInput.value;
   let password = passwordInput.value;
@@ -20,4 +16,13 @@ submitButton.addEventListener("click", () => {
       return;
     }
   });
+  if (!successAuth) {
+    displayAlert("შეცდომა", "არ არსებობს მომხარებელი", "info");
+    return;
+  }
+  displayAlert("შესრულდა", "წარმატებით დაემატა გაიარეთ ავტორიზაცია", "success");
+  localStorage.setItem("userid", currentUser.userid);
+  setTimeout(() => {
+    location.href = "index.html";
+  }, 1000);
 });
