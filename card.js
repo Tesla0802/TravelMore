@@ -39,6 +39,9 @@ setTimeout(() => {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
               </p>
+              <button style="display: none;"  id="Btn2" type="button" class="btn btn-outline-info">
+              Delete ${element.data.key}
+            </button>
             </div>
           </div>
         </div>
@@ -114,6 +117,9 @@ function displayData(displayElement, element, key) {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
               </p>
+              <button style="display: none;"  id="Btn2" type="button" class="btn btn-outline-info">
+              Delete ${element.data.key}
+            </button>
             </div>
           </div>
         </div>
@@ -122,10 +128,19 @@ function displayData(displayElement, element, key) {
   `;
 }
 
-function deletePost(key) {
+function deleteCard(key) {
   removeElementFromFirebase("Card", key);
   location.reload();
 }
+// getArrayFromFirebase("User/", {
+//   console.log()
+// } )
+console.log(getArrayFromFirebase("User/", ) )
+getArrayFromFirebase("Usuer/", {
+  if(Type ="Admin") {
+    BTN2.style.display = "flex"
+  }
+} )
 
 
 
