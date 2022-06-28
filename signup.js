@@ -6,6 +6,13 @@ const submitButton = document.querySelector("#submitButton");
 
 const userArray = getArrayFromFirebase("User");
 
+const logIn = document.querySelector(".log-in");
+const acc = document.querySelector(".dropdown-menu");
+
+logIn.style.display = "inline-block";
+
+acc.style.height = "3rem";
+
 submitButton.addEventListener("click", () => {
   let name = nameInput.value;
   let last_name = lastnameInput.value;
