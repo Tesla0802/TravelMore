@@ -26,6 +26,7 @@ header {
   background-attachment: fixed;
   position: fixed;
   z-index: 101;
+  margin-bottom: 20px;
 }
 
 .dropdown {
@@ -189,10 +190,10 @@ main .card {
 main .inputbox .inputtwo {
   max-height: 100px;
 }
-/* 
+
 .log-out {
   display: none;
-} */
+}
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

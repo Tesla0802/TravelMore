@@ -15,6 +15,17 @@ function displayAlert(title, text, icon) {
   });
 }
 
+file.addEventListener("cange", function () {
+  const choosedfile = this.file[0];
+  if (choosedfile) {
+    const reader = new FileReader();
+    reader.addEventListener("load", function () {
+      img.setAttribute("src", reader.result);
+    });
+    reader.readAsDataURL(choosedfile);
+  }
+});
+
 if (localStorage.getItem("userid")) {
   let url = location.href.split("/")[3];
   if (url === "login.html" || url === "register.html") {
