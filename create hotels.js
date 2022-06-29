@@ -14,7 +14,6 @@ BTN.addEventListener("click", () => {
   let inputfourValue = place.value;
   let inputfiveValue = text.value;
   let inputeightValue = Price.value;
-  let Admin = Type;
   if (
     inputoneValue === "" ||
     inputtwoValue === "" ||
