@@ -22,7 +22,6 @@ submitButton.addEventListener("click", () => {
     }
   });
 
-  displayAlert("მოგესალმებით", "ადმინი წარმატებით შევიდა სისტემაში", "success");
   if (alreadyUsedEmail) {
     displayAlert("შეცდომა", "უკვე არსებობს ესეთი იმეილი", "info");
     return;

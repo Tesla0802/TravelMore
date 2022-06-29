@@ -85,6 +85,7 @@ main .register {
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
   color: #000000;
+  margin-top: 100px;
 }
 
 main .register .top h3 {
