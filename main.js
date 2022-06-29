@@ -1,12 +1,6 @@
 const Variability = document.querySelector(".form-switch");
 const body = document.querySelector("body");
 const card = document.querySelector(".flip-card-back");
-let logic = true;
-
-
-
-
-
 function displayAlert(title, text, icon) {
   Swal.fire({
     icon: icon,
@@ -58,13 +52,17 @@ if (!localStorage.getItem("userid")) {
 }
 
 
+
+let logic = true;
+
 Variability.addEventListener("click", () => {
   if (logic) {
     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+    card.style.backgroundColor = "#182F3F";
   } else {
     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
+    card.style.backgroundColor = "#B1EAFD";
   }
   logic = !logic;
   
 });
-

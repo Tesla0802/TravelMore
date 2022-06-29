@@ -9,7 +9,6 @@ const userArray = getArrayFromFirebase("User");
 const userId = localStorage.getItem("userid");
 // const lastnameInput = document.querySelector("#lastname");
 
-
 setTimeout(() => {
   cardAray.forEach((element) => {
     Card.innerHTML += `    
@@ -138,9 +137,6 @@ function Delete(key) {
 //   console.log()
 // } )
 
-
-
-
 // BTN2.addEventListener("click", () => {
 //   NavbarItems.innerHTML += `
 //   <a class="nav-link" href="./editcard.html"
@@ -159,4 +155,3 @@ function Delete(key) {
 //   }
 //  },2000)
 // } )
-
