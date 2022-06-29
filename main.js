@@ -28,6 +28,12 @@ if (localStorage.getItem("userid")) {
   document.querySelectorAll(".clear").forEach((element) => {
     element.remove();
   });
+
+  const guest = document.querySelector(".guest");
+  const hotelMeneger = document.querySelector(".hotelMeneger");
+
+  guest.style.display = "none";
+  hotelMeneger.style.display = "flex";
   const logOut = document.querySelector(".log-out");
   const logIn = document.querySelector(".log-in");
   const signUp = document.querySelector(".sign-up");
@@ -51,8 +57,6 @@ if (!localStorage.getItem("userid")) {
   }
 }
 
-
-
 let logic = true;
 
 Variability.addEventListener("click", () => {
@@ -64,5 +68,4 @@ Variability.addEventListener("click", () => {
     card.style.backgroundColor = "#B1EAFD";
   }
   logic = !logic;
-  
 });
