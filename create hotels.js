@@ -3,9 +3,15 @@ const number = document.querySelector(".inputtwo");
 const mail = document.querySelector(".inputthree");
 const place = document.querySelector(".inputfour");
 const text = document.querySelector(".inputfive");
-const image = document.querySelector(".inputsix")
-const Price = document.querySelector(".inputeight")
+const image = document.querySelector(".inputsix");
+const Price = document.querySelector(".inputeight");
 const BTN = document.querySelector(".Btn");
+
+const acc = document.querySelector(".dropdown-menu");
+const signUp = document.querySelector(".sign-up");
+
+acc.style.height = "3rem";
+signUp.style.display = "none";
 
 BTN.addEventListener("click", () => {
   let inputoneValue = Name.value;
@@ -36,7 +42,7 @@ BTN.addEventListener("click", () => {
         mail: inputthreeValue,
         location: inputfourValue,
         text: inputfiveValue,
-        Price : inputeightValue,
+        Price: inputeightValue,
         imgSrc: imgSrc,
         uploadTime: new Date().toLocaleString(),
       });
@@ -50,7 +56,7 @@ BTN.addEventListener("click", () => {
       mail: inputthreeValue,
       location: inputfourValue,
       text: inputfiveValue,
-      Price : inputeightValue,
+      Price: inputeightValue,
       imgSrc: imgSrc,
       uploadTime: new Date().toLocaleString(),
     });

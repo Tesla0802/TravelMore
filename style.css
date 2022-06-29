@@ -51,6 +51,8 @@ header {
 
 .hotelMeneger {
   display: none;
+  font-size: 1.4rem;
+  color: #ff0000;
 }
 
 .admin {

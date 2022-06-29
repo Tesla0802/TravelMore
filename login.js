@@ -4,10 +4,6 @@ const submitButton = document.querySelector("#submitButton");
 
 const userArray = getArrayFromFirebase("User");
 
-const acc = document.querySelector(".dropdown-menu");
-
-acc.style.height = '3rem'
-
 submitButton.addEventListener("click", () => {
   let email = emailInput.value;
   let password = passwordInput.value;
@@ -30,7 +26,3 @@ submitButton.addEventListener("click", () => {
     location.href = "index.html";
   }, 1000);
 });
-
-addElementInFirebase("Profilepic/", {
-  
-} )
