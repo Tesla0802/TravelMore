@@ -1,6 +1,7 @@
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
 const submitButton = document.querySelector("#submitButton");
+const acc = document.querySelector(".dropdown-menu");
 
 const userArray = getArrayFromFirebase("User");
 
@@ -26,3 +27,4 @@ submitButton.addEventListener("click", () => {
     location.href = "index.html";
   }, 1000);
 });
+acc.style.height = "3rem";
