@@ -1,14 +1,6 @@
 const Variability = document.querySelector(".form-switch");
 const body = document.querySelector("body");
 const card = document.querySelector(".flip-card-back");
-// let logic = true;
-const nameInput = document.querySelector("#name");
-const lastnameInput = document.querySelector("#lastname");
-const emailInput = document.querySelector("#email");
-const passwordInput = document.querySelector("#password");
-const submitButton = document.querySelector("#submitButton");
-const Type = document.querySelector("#Admin");
-
 function displayAlert(title, text, icon) {
   Swal.fire({
     icon: icon,
@@ -59,26 +51,7 @@ if (!localStorage.getItem("userid")) {
   }
 }
 
-// Variability.addEventListener("click", () => {
-//   if (logic) {
-//     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-//   } else {
-//     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
-//   }
-//   logic = !logic;
 
-// });
-//  if(location.href == "createhotel.html") {
-//   if (!logic) {
-//     localStorage.setItem('userid', 'night');
-//     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-//   } else {
-//     localStorage.setItem('userid', 'night')
-//     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
-//   }
-//   logic = logic;
-
-//  }
 
 let logic = true;
 
@@ -90,33 +63,6 @@ Variability.addEventListener("click", () => {
     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
     card.style.backgroundColor = "#B1EAFD";
   }
-
   logic = !logic;
+  
 });
-
-// document.body.classList.add(localStorage.getItem("lightDark"));
-
-// Variability.addEventListener("click", function () {
-
-//   if (logic) {
-
-//     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
-
-//     document.body.classList.add(this.getAttribute("dayNight"));
-
-//     localStorage.setItem("lightDark", this.getAttribute("dayNight"));
-
-//   } else {
-
-//     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
-
-//     document.body.classList.add(this.getAttribute("dayNight"));
-
-//     localStorage.setItem("lightDark", this.getAttribute("dayNight"));
-
-//   }
-
-//   logic = !logic;
-
-// });
-// }})
