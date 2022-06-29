@@ -7,10 +7,7 @@ const lastnameInput = document.querySelector("#lastname");
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
 const submitButton = document.querySelector("#submitButton");
-const Type = document.querySelector("#Admin")
-
-
-
+const Type = document.querySelector("#Admin");
 
 function displayAlert(title, text, icon) {
   Swal.fire({
@@ -62,7 +59,6 @@ if (!localStorage.getItem("userid")) {
   }
 }
 
-
 // Variability.addEventListener("click", () => {
 //   if (logic) {
 //     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
@@ -70,7 +66,7 @@ if (!localStorage.getItem("userid")) {
 //     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
 //   }
 //   logic = !logic;
-  
+
 // });
 //  if(location.href == "createhotel.html") {
 //   if (!logic) {
@@ -81,28 +77,24 @@ if (!localStorage.getItem("userid")) {
 //     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
 //   }
 //   logic = logic;
-  
+
 //  }
- 
-let logic = true
-Variability.addEventListener("click",  () => {
-  if(logic) {
+
+let logic = true;
 
 Variability.addEventListener("click", () => {
   if (logic) {
     body.style.backgroundImage = "url(./img/bgNigth.dda13b0508ea72b6b5f0.png)";
+    card.style.backgroundColor = "#182F3F";
   } else {
     body.style.backgroundImage = "url(./img/bgDay.074ef37336b466c36b93.png)";
+    card.style.backgroundColor = "#B1EAFD";
   }
 
-  logic = !logic
-}  )
-
   logic = !logic;
-} }) ;
+});
 
 // document.body.classList.add(localStorage.getItem("lightDark"));
-
 
 // Variability.addEventListener("click", function () {
 
