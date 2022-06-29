@@ -41,7 +41,7 @@ setTimeout(() => {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.data.uploadTime}
               </p>
-              <button onclick="Delete(${element.userIdkey}) "   id="Btn2" type="button" class="btn btn-outline-info">
+              <button onclick="Delete(${element.userIdkey}) "   id="Btn2" type="button" class="btn btn-outline-danger">
               Delete 
             </button>
             </div>
@@ -119,7 +119,7 @@ function displayData(displayElement, element, key) {
               </p>
               <p><i class="fa-solid fa-clock"></i> ${element.uploadTime}
               </p>
-              <button.onclick="${element.userIdkey}" "  id="Btn2" type="button" class="btn btn-outline-info">
+              <button.onclick="${element.userIdkey}" "  id="Btn2" type="button" class="btn btn-outline-danger">
               Delete 
             </button>
             </div>
