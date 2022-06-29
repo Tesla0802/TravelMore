@@ -6,7 +6,13 @@ const userArray = getArrayFromFirebase("User");
 
 const acc = document.querySelector(".dropdown-menu");
 
-acc.style.height = '3rem'
+acc.style.height = "3rem";
+
+const guest = document.querySelector(".guest");
+const hotelMeneger = document.querySelector(".hotelMeneger");
+
+guest.style.display = "none";
+hotelMeneger.style.display = "flex";
 
 submitButton.addEventListener("click", () => {
   let email = emailInput.value;
@@ -31,6 +37,4 @@ submitButton.addEventListener("click", () => {
   }, 1000);
 });
 
-addElementInFirebase("Profilepic/", {
-  
-} )
+addElementInFirebase("Profilepic/", {});
