@@ -368,12 +368,12 @@ main .inputbox button {
   outline: none;
   border-radius: 25px;
   transition: all 0.5s ease-in-out;
-  background-color: #007a33;
+  background-color: #afeafd;
   padding-right: 40px;
   color: #1d1d1d;
 }
 .input-search::placeholder {
-  color: rgba(0, 122, 51, 0.5);
+  color: #afeafd80;
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 100;
@@ -390,7 +390,7 @@ main .inputbox button {
   border-radius: 50%;
   position: absolute;
   right: 0px;
-  color: #fdb927;
+  color: #182f3f;
   background-color: transparent;
   pointer-events: painted;
 }
@@ -398,13 +398,13 @@ main .inputbox button {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
-  border-bottom: 1px solid rgba(0, 122, 51, 0.5);
+  border-bottom: 1px solid #afeafd80;
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 .input-search:focus {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
-  border-bottom: 1px solid rgba(0, 122, 51, 0.5);
+  border-bottom: 1px solid #afeafd80;
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
