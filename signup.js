@@ -31,7 +31,7 @@ submitButton.addEventListener("click", () => {
     last_name: last_name,
     email: email,
     password: password,
-  });
+    });
   displayAlert("შესრულდა", "წარმატებით დაემატა მომხარებელი", "success");
   setTimeout(() => {
     location.href = "login.html"
