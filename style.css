@@ -78,6 +78,11 @@ main {
   row-gap: 20px;
 }
 
+main .card {
+  display: flex;
+  justify-content: center;
+}
+
 main .register {
   display: grid;
   grid-template-columns: 1fr;
@@ -351,6 +356,7 @@ main .inputbox button {
   height: fit-content;
   position: relative;
 }
+
 .input-search {
   height: 50px;
   width: 50px;
