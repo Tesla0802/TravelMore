@@ -12,16 +12,6 @@ function displayAlert(title, text, icon) {
   });
 }
 
-// file.addEventListener("cange", function () {
-//   const choosedfile = this.file[0];
-//   if (choosedfile) {
-//     const reader = new FileReader();
-//     reader.addEventListener("load", function () {
-//       img.setAttribute("src", reader.result);
-//     });
-//     reader.readAsDataURL(choosedfile);
-//   }
-// });
 
 if (localStorage.getItem("userid")) {
   let url = location.href.split("/")[3];
@@ -32,11 +22,6 @@ if (localStorage.getItem("userid")) {
     element.remove();
   });
 
-  // const guest = document.querySelector(".guest");
-  // const hotelMeneger = document.querySelector(".hotelMeneger");
-
-  // guest.style.display = "none";
-  // hotelMeneger.style.display = "flex";
   const logOut = document.querySelector(".log-out");
   const logIn = document.querySelector(".log-in");
   const signUp = document.querySelector(".sign-up");
@@ -51,6 +36,9 @@ if (localStorage.getItem("userid")) {
   });
   if (url === "signup.html" && url === "login.html") {
     dropdownMenu.style.height = "2rem";
+  }
+  if (url ===  "createhotel.html") {
+    dropdownMenu.style.height = "3rem";
   }
 }
 

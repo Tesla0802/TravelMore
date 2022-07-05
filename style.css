@@ -309,6 +309,7 @@ main .left .cardright {
   flex-direction: column;
   color: #ffffff;
   padding: 62px 10px 0px 14px;
+  margin-top: 30px;
 }
 
 .upload-your-hotel .inputbox .inputone {
